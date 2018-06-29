@@ -1,0 +1,14 @@
+<div class="index-special-title">
+    <h2>{{ad_name}}</h2>
+    <i>推</i>
+</div>
+<div class="index-special-cont">
+    {{#each data.data}}
+    <a href="page/details.html?id={{reference_id}}">
+        <img data-original="{{ad_pic_url}}" class="lazy" title="{{ad_name}}">
+    </a>
+    {{/each}}
+</div>
+<div class="index-special-footer">
+    更多精彩专题>
+</div>

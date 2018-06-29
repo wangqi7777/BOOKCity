@@ -1,0 +1,35 @@
+<div class="index-recommend-title">
+    <div class="i-t-left">
+        <h2>重磅推荐</h2>
+        <i>推</i>
+    </div>
+    <div class="i-t-right">
+        <span class="active">男</span> |
+        <span>女</span>
+    </div>
+</div>
+<div class="index-recommend-cont">
+    {{#each this}} {{#if @index}}
+    <a href="page/details.html?id={{fiction_id}}">
+        <div class="index-recommend-list">
+            <p><span>{{cont}}</span><span>{{title}}</span><span>{{authors}}</span></p>
+        </div>
+    </a>
+    {{else}}
+    <div class="index-dl-cont">
+        <a href="page/details.html?id={{fiction_id}}">
+            <dl>
+                <dt>
+                <img data-original="{{cover}}" class="lazy"><em>{{#finish finish}}{{/finish}}</em>
+            </dt>
+                <dd>
+                    <h1>{{title}}</h1>
+                    <p>{{authors}}</p>
+                    <p>{{summary}}</p>
+                    <p>{{#each categories}}<span>{{label}}</span>{{/each}}</p>
+                </dd>
+            </dl>
+        </a>
+    </div>
+    {{/if}} {{/each}}
+</div>

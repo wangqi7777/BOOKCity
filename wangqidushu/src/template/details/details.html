@@ -1,0 +1,42 @@
+<div class="detail_tit">
+    <dl>
+        <dt><img src="{{item.cover}}" alt=""></dt>
+        <dd>
+            <h2>{{item.title}}</h2>
+            <p class="author">{{item.authors}}</p>
+            <h3>
+                <p class="star {{item.source}}"></p>
+                <p class="num">{{item.rights_id}}个评价</p>
+            </h3>
+            <p class="price">价格：{{item.price}}书币/每字</p>
+            <p class="word">字数：{{#wordcount item.word_count}}{{/wordcount}}万字<b>{{#finish finish}}{{/finish}}</b></p>
+        </dd>
+    </dl>
+</div>
+<div class="btn">
+    <a href="read.html?id={{item.source_id}}&chapternum={{item.chapter_count}}" class="begin">开始阅读</a>
+    <a href="javascript:;" class="download">下载</a>
+</div>
+<div class="detail_content">{{item.content}}</div>
+<div class="latest" onclick="window.location.href='/page/menu.html?id={{item.source_id}}&active={{item.latest_id}}'">最新：{{item.latest}} 更新于 {{#updatedTime item.updated}}{{/updatedTime}}</div>
+<div class="fenge"></div>
+<div class="tag">
+    <h2>类别标签</h2>
+    <ul>{{#each item.tags}}
+        <li>{{this}}</li>{{/each}}</ul>
+</div>
+<div class="fenge"></div>
+<div class="other">
+    <h2>作者其它图书</h2>
+    {{#each author_books}}
+    <dl>
+        <dt><img src="{{cover}}" alt=""></dt>
+        <dd>{{title }}</dd>
+    </dl>
+    {{/each}}
+</div>
+<div class="fenge"></div>
+<div class="copy">
+    <h2>图书信息</h2>
+    <p>版权：阅文集团旗下起点中文网</p>
+</div>

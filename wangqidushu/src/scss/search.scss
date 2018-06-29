@@ -1,0 +1,84 @@
+@import 'common.scss';
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-header {
+    height: pxTorem(40px);
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    background: #efeff0;
+    padding-right: pxTorem(15px);
+    border-bottom: 2px solid #ccc;
+    a {
+        width: pxTorem(40px);
+        height: pxTorem(40px);
+        text-align: center;
+        line-height: pxTorem(40px);
+        font-size: pxTorem(20px);
+        color: #b1b1b2;
+    }
+    .search-header-input {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        flex: 1;
+        b {
+            display: inline-block;
+            width: pxTorem(30px);
+            height: pxTorem(30px);
+            border-right: 2px solid #f0f0f0;
+            background: url(http://image.read.duokan.com/mfsv2/download/s010/p01TjruXIhgt/PP13pEqhpChuay.png) no-repeat center;
+            background-size: pxTorem(14px);
+        }
+        input {
+            font-size: pxTorem(14px);
+            flex: 1;
+            padding-left: pxTorem(10px);
+            height: pxTorem(30px);
+            border-right: 2px solid #f0f0f0;
+        }
+        .search-header-input-btn {
+            width: pxTorem(40px);
+            height: pxTorem(30px);
+            text-align: center;
+            line-height: pxTorem(30px);
+            color: #666;
+            font-size: pxTorem(14px);
+        }
+    }
+}
+
+.search-section {
+    flex: 1;
+    .search-section-list {
+        padding: pxTorem(15px);
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            margin: 0 pxTorem(10px) pxTorem(15px);
+            padding: pxTorem(4px) pxTorem(15px);
+            font-size: pxTorem(14px);
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #e8f9db;
+            color: #766d5d;
+            &:nth-of-type(3n) {
+                background: #fbebe8;
+            }
+            &:nth-of-type(2n) {
+                background: #fcedda;
+            }
+        }
+    }
+    .search-tit {
+        width: 100%;
+        text-align: center;
+        font-size: pxTorem(14px);
+        margin-top: pxTorem(10px);
+    }
+}

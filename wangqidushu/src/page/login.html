@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <script src="../js/lib/require.js"></script>
+    <script>
+        require(['../js/main'], function() {
+            require(['login'])
+        })
+    </script>
+</head>
+
+<body>
+    <div class="login-wrap">
+        <div class="login-top">
+            <em>
+            </em>
+            <p>小米账号登录</p>
+        </div>
+        <div class="login-from">
+            <label>
+                <input type="text" class="user" placeholder="邮箱/手机号码/小米ID">
+            </label>
+            <label>
+                <input type="password" class="pwd" placeholder="密码">
+                <em class="login-eye"><i class="icon iconfont icon-yanjing"></i></em>
+            </label>
+            <div class="login-error">
+                <span class="login-error-1">请输入用户名</span>
+                <span class="login-error-2">请输入密码</span>
+                <span class="login-error-3">用户名不正确</span>
+                <span class="login-error-4">用户名或密码不正确</span>
+            </div>
+            <button type="button" class="login-btn">登录</button>
+            <button type="button" class="reglogin-btn">手机短信登录/注册</button>
+
+            <p><span>立即注册</span>|<span>忘记密码？</span></p>
+            <div class="login-other-login">
+                <p>其它方式登录</p>
+                <div class="login-other-login-from">
+                    <span>QQ</span>
+                    <span>XL</span>
+                    <span>ZFB</span>
+                </div>
+            </div>
+        </div>
+        <div class="login-bottom">
+            <span>简体</span>|<span>繁体</span>|
+            <span>English</span>|
+            <span>常见问题</span>|
+            <span>隐私政策</span>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../js/lib/require.js"></script>
+    <script>
+        require(['../js/main'], function() {
+            require(['menu'])
+        })
+    </script>
+</head>
+
+<body>
+    <div class="menu-wrap">
+        <header class="header">
+            <a href="javascript:history.back()" class="go_back">&lt;</a>
+            <span class="header_title">目录</span>
+            <a href="http://localhost:6060/" class="home"></a>
+        </header>
+        <section class="section">
+            <ul class="menu-list">
+                <script type="text/x-handlebars-template" class="menu-list-li">
+                    {{#each toc}}
+                    <li>
+                        <span class="{{#if active}}active{{/if}}">{{title}}</span>{{#if free}}<b>免费</b>{{/if}}
+                    </li>
+                    {{/each}}
+                </script>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>

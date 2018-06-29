@@ -1,0 +1,18 @@
+<div class="index-title">
+    <h2>{{ad_name}}</h2>
+</div>
+<ul class="index-hot">
+    {{#each data.data}}
+
+    <li>
+        <a href="page/details.html?id={{fiction_id}}">
+            <img data-original="{{cover}}" class="lazy">
+            <span>{{title}}</span>
+        </a>
+    </li>
+
+    {{/each}}
+</ul>
+<div class="index-footer">
+    查看更多
+</div>

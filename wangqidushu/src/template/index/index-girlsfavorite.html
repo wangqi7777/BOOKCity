@@ -1,0 +1,17 @@
+ {{#each this}}
+<div class="index-dl-cont">
+    <a href="page/details.html?id={{fiction_id}}">
+        <dl>
+            <dt>
+                <img data-original="{{cover}}" class="lazy"><em>{{#finish finish}}{{/finish}}</em>
+            </dt>
+            <dd>
+                <h1>{{title}}</h1>
+                <p>{{authors}}</p>
+                <p>{{summary}}</p>
+                <p>{{#each categories}}<span>{{label}}</span>{{/each}}</p>
+            </dd>
+        </dl>
+    </a>
+</div>
+{{/each}}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/lib/swiper-4.3.2.min.css">
+    <script src="js/lib/require.js"></script>
+    <script>
+        require(['js/main'], function() {
+            require(['index'])
+        })
+    </script>
+</head>
+
+<body>
+    <div class="index-wrap">
+        <header class="index-header">
+            <div class="index-left">
+                <a href="page/login.html"></a>
+            </div>
+            <div class="index-cen">
+                <span class="active book-btn">书城</span>
+                <span class="book-btn">书架</span>
+            </div>
+            <div class="index-right">
+                <a href="javascript:;"></a>
+            </div>
+        </header>
+        <section class="index-section">
+            <div class="index-box">
+                <div class="index-bookcity">
+                    <div class="index-bookcity-inner">
+                        <!-- 搜索 -->
+                        <div class="index-search">
+                            <div class="index-search-text">输入书名/作者/关键字</div>
+                        </div>
+                        <!-- 轮播图 -->
+                        <div class="index-banner-nav">
+                        </div>
+                        <!-- 本周最火  -->
+                        <div class="index-weekhot">
+                        </div>
+                        <!-- 重磅推荐  -->
+                        <div class="index-recommend">
+                            <div class="index-recommend-section"></div>
+                            <div class="index-recommend-bto">
+                                <button type="button" class="huanyihuan" data-id="0" data="2">换一换</button>
+                                <button type="button">查看更多</button>
+                            </div>
+                        </div>
+                        <!-- 女生最爱  -->
+                        <div class="index-girlsfavorite">
+                            <div class="index-recommend-title">
+                                <div class="i-t-left">
+                                    <h2>女生最爱</h2>
+                                </div>
+                            </div>
+                            <div class="index-girlsfavorite-section"></div>
+                            <div class="index-recommend-bto">
+                                <button type="button" class="huanyihuan" data-id="0" data="3">换一换</button>
+                                <button type="button">查看更多</button>
+                            </div>
+                        </div>
+                        <!-- 男生最爱  -->
+                        <div class="index-boysfavorite">
+                            <div class="index-recommend-title">
+                                <div class="i-t-left">
+                                    <h2>男生最爱</h2>
+                                </div>
+                            </div>
+                            <div class="index-boysfavorite-section">
+
+                            </div>
+                            <div class="index-recommend-bto">
+                                <button type="button" class="huanyihuan" data-id="0" data="4">换一换</button><button type="button">查看更多</button>
+                            </div>
+                        </div>
+                        <!-- 限时免费  -->
+                        <div class="index-free index-weekhot"></div>
+                        <!-- 精彩专题 -->
+                        <div class="index-special"></div>
+                        <!-- 上拉加载 -->
+                        <div class="index-loading">
+                            <div class="index-loading-inner"></div>
+                            <p class="index-loading-text">加载更多</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="index-bookshelf">
+                    <!-- 搜索框 -->
+                    <div class="index-search">
+                        <div class="index-search-text">输入书名/作者/关键字</div>
+                        <div class="index-search-pic">
+                        </div>
+                    </div>
+                    <!-- 列表 -->
+                    <div class="index-list">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

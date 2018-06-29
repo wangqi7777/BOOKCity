@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/read.css">
+    <script src="../js/lib/require.js"></script>
+    <script>
+        require(['../js/main'], function() {
+            require(['read'])
+        })
+    </script>
+</head>
+
+<body>
+    <div class="read-wrap">
+        <div class="read-menu-box active">
+            <div class="read-menu">
+                <div class="read-menu-top">
+                    <div class="read-menu-top-left">
+                        <a href="javascript:history.back()"><span>&lt;</span><span>返回</span></a>
+                    </div>
+                    <div class="read-menu-right-right">* * *</div>
+                </div>
+                <div class="read-menu-bot">
+                    <div class="top">
+                        <div class="left">上一章</div>
+                        <div class="cen"><i>1</i>/<b></b></div>
+                        <div class="right">下一章</div>
+                    </div>
+                    <div class="read-font-config">
+                        <p class="config-font">
+                            <span>大小</span>
+                            <button class="font-big">大</button>
+                            <button class="font-small">小</button>
+                        </p>
+                    </div>
+                    <div class="bot">
+                        <a class="menu-btn">
+                            <i>&</i>
+                            <span>目录</span>
+                        </a>
+                        <a href="javascript:;">
+                            <i>&</i>
+                            <span>字体</span>
+                        </a>
+                        <a href="javascript:;">
+                            <i>&</i>
+                            <span>夜间</span>
+                        </a>
+                        <a href="javascript:;">
+                            <i>&</i>
+                            <span>下载</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="read-cont">
+            <ul class="read-cont-list">
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
